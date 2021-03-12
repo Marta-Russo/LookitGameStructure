@@ -2,8 +2,7 @@
     "frames": {
         "question-block": {
             "kind": "exp-frame-select",
-            "frameOptions": [
-                {
+            "frameOptions": [{
                     "kind": "exp-lookit-survey",
                     "formSchema": {
                         "schema": {
@@ -599,8 +598,7 @@
         "intro-study": {
             "kind": "exp-lookit-instructions",
             "title": "",
-            "blocks": [
-                {
+            "blocks": [{
                     "text": "",
                     "image": {
                         "alt": "logo",
@@ -641,7 +639,7 @@
                 "text": "Thank you for participating in PAIRS!<br /><br />  We hope you enjoyed the games. You will receive a message on the Lookit Platform within two weeks with your $10 Amazon gift card code. If you have any concerns, you may e-mail the study team at <a href=\"mailto:pairs@mit.edu\"> pairs@mit.edu </a> <br /><br /> Your child completed five games to measure how they predict a moving object. The objects in our games varied in their spatial and timing characteristics from trial to trial. The games were designed to be challenging enough so that even most adults can’t succeed on every try. There are many different ways a child might perform these tasks, and we are interested in studying this variation. If your child found the games too easy or too challenging, please know that is ok, and that their responses help us study a range of prediction abilities, and how these abilities change with age. <br /><br /> If you would like to learn more about prediction and development, you can read more at <a href=\"https://www.spectrumnews.org/features/deep-dive/autism-may-stem-problems-prediction/#no-back-button\" target=\"_blank\" >this article</a>. <br /><br /> One of the most challenging parts of neuroscience research is finding participants. If you enjoyed this study and want to further help the research team, please consider sharing via Facebook using the button below or by sending the study website (<a href=\"http://pairs.mit.edu\" target=\"_blank\">PAIRS website</a>) to other families with children ages 12-17 years.",
                 "title": "Thank you!"
             },
-            "generateProperties": "function(expData, sequence, child, pastSessions) {var diagnosis_frame = expData['5-question-block-1'];var want_to_play_frame = expData['5-question-block-18']; if(typeof(diagnosis_frame) !== 'undefined' && typeof(diagnosis_frame.formData.diagnosis) !== 'undefined' && diagnosis_frame.formData.diagnosis == 'Yes') { return {'debriefing': {'text': 'If you would like to participate in this and other autism studies, you are invited to visit the <a href=\"https://sparkforautism.org/registration/account_information/#no-back-button\" target=\"_blank\">SPARK</a> website to learn about research studies. At this time, we are not able to enroll participants with autism who are not yet registered in SPARK. Thank you for your understanding.', 'title':  'Thank you for completing these questions.'} }; } else if(typeof(want_to_play_frame) !== 'undefined' && typeof(want_to_play_frame.formData.want_to_play) !== 'undefined' && want_to_play_frame.formData.want_to_play == 'No') {return {'debriefing': {'text': 'Thank you for your interest in our research. You may close your browser window to exit or click on the Lookit logo to see if there are other studies that might be a fit for your teen.', 'title':  'Goodbye!'}};} else {return {'debriefing': {'text': 'Thank you for participating in PAIRS! <br /><br /> We hope you enjoyed the games. You will receive a message on the Lookit Platform within two weeks with your $10 Amazon gift card code. If you have any concerns, you may e-mail the study team at <a href=\"mailto:pairs@mit.edu\"> pairs@mit.edu </a> <br /><br /> Your child completed five games to measure how they predict a moving object. The objects in our games varied in their spatial and timing characteristics from trial to trial. The games were designed to be challenging enough so that even most adults can’t succeed on every try. There are many different ways a child might perform these tasks, and we are interested in studying this variation. If your child found the games too easy or too challenging, please know that is ok, and that their responses help us study a range of prediction abilities, and how these abilities change with age. <br /><br /> If you would like to learn more about prediction and development, you can read more at <a href=\"https://www.spectrumnews.org/features/deep-dive/autism-may-stem-problems-prediction/#no-back-button\" target=\"_blank\" >this article</a>. <br /><br /> One of the most challenging parts of neuroscience research is finding participants. If you enjoyed this study and want to further help the research team, please consider sharing via Facebook using the button below or by sending the study website (<a href=\"http://pairs.mit.edu\" target=\"_blank\">PAIRS website</a>) to other families with children ages 12-17 years.', 'title': 'Thank you!'}}; }}"
+            "generateProperties": "function(expData, sequence, child, pastSessions) {var diagnosis_frame = expData['5-question-block-1'];var want_to_play_frame = expData['5-question-block-18']; if(typeof(diagnosis_frame) !== 'undefined' && typeof(diagnosis_frame.formData.diagnosis) !== 'undefined' && diagnosis_frame.formData.diagnosis == 'Yes') { return {'debriefing': {'text': 'At this time, we are not able to enroll individuals with autism spectrum disorder who are not yet registered in <a href=\"https://sparkforautism.org/registration/account_information/#no-back-button\" target=\"_blank\">SPARK</a>, a national database of children and adults with a diagnosis of autism. If you would like to participate in future autism research studies, you are invited to visit the SPARK website to learn more about signing up. Thank you for your understanding.', 'title':  'Thank you for completing these questions.'} }; } else if(typeof(want_to_play_frame) !== 'undefined' && typeof(want_to_play_frame.formData.want_to_play) !== 'undefined' && want_to_play_frame.formData.want_to_play == 'No') {return {'debriefing': {'text': 'Thank you for your interest in our research. You may close your browser window to exit or click on the Lookit logo to see if there are other studies that might be a fit for your teen.', 'title':  'Goodbye!'}};} else {return {'debriefing': {'text': 'Thank you for participating in PAIRS! <br /><br /> We hope you enjoyed the games. You will receive a message on the Lookit Platform within two weeks with your $10 Amazon gift card code. If you have any concerns, you may e-mail the study team at <a href=\"mailto:pairs@mit.edu\"> pairs@mit.edu </a> <br /><br /> Your child completed five games to measure how they predict a moving object. The objects in our games varied in their spatial and timing characteristics from trial to trial. The games were designed to be challenging enough so that even most adults can’t succeed on every try. There are many different ways a child might perform these tasks, and we are interested in studying this variation. If your child found the games too easy or too challenging, please know that is ok, and that their responses help us study a range of prediction abilities, and how these abilities change with age. <br /><br /> If you would like to learn more about prediction and development, you can read more at <a href=\"https://www.spectrumnews.org/features/deep-dive/autism-may-stem-problems-prediction/#no-back-button\" target=\"_blank\" >this article</a>. <br /><br /> One of the most challenging parts of neuroscience research is finding participants. If you enjoyed this study and want to further help the research team, please consider sharing via Facebook using the button below or by sending the study website (<a href=\"http://pairs.mit.edu\" target=\"_blank\">PAIRS website</a>) to other families with children ages 12-17 years.', 'title': 'Thank you!'}}; }}"
         },
         "start-recording-with-video": {
             "kind": "exp-lookit-start-recording",
@@ -656,11 +654,9 @@
         "transition": {
             "kind": "exp-lookit-instructions",
             "title": "",
-            "blocks": [
-                {
-                    "text": "You’re about to begin the research study.  You will hear an introduction and then play 5 games. Once you start a game you cannot pause it. You will be able to take a break between games. Listen carefully to the instructions for each game."
-                }
-            ],
+            "blocks": [{
+                "text": "You’re about to begin the research study.  You will hear an introduction and then play 5 games. Once you start a game you cannot pause it. You will be able to take a break between games. Listen carefully to the instructions for each game."
+            }],
             "showNextButton": true,
             "showPreviousButton": false,
             "nextButtonText": "Next"
@@ -670,95 +666,76 @@
             "displayFullscreenOverride": true,
             "baseDir": "https://npiproject.s3.us-east-2.amazonaws.com/Resources/images/assent/",
             "participationQuestion": "Do you want to participate in this study?",
-            "pages": [
-                {
+            "pages": [{
                     "imgSrc": "1.png",
                     "altText": "image",
-                    "textBlocks": [
-                        {
-                            "text": "Hello! Our names are Dagmar Sternad and Pawan Sinha. We are scientists in Boston, Massachusetts. We study how children and teens move and learn."
-                        }
-                    ],
+                    "textBlocks": [{
+                        "text": "Hello! Our names are Dagmar Sternad and Pawan Sinha. We are scientists in Boston, Massachusetts. We study how children and teens move and learn."
+                    }],
                     "audio": ""
                 },
                 {
                     "imgSrc": "2.png",
                     "altText": "image",
-                    "textBlocks": [
-                        {
-                            "text": "We are asking you to take part in a research study because we are trying to learn more about how kids like you learn to play different games on a computer."
-                        }
-                    ],
+                    "textBlocks": [{
+                        "text": "We are asking you to take part in a research study because we are trying to learn more about how kids like you learn to play different games on a computer."
+                    }],
                     "audio": ""
                 },
                 {
                     "imgSrc": "3.png",
                     "altText": "image",
-                    "textBlocks": [
-                        {
-                            "text": "If you agree to be in this study, you will be asked to read or listen to some instructions, practice the games, and then play them on your computer at home, while your parent/caregiver stays in the room with you. In the games we will ask you to catch, bounce, or watch a moving object on the screen. You will also need to press a button or move your mouse/touchpad cursor to play the game."
-                        }
-                    ],
+                    "textBlocks": [{
+                        "text": "If you agree to be in this study, you will be asked to read or listen to some instructions, practice the games, and then play them on your computer at home, while your parent/caregiver stays in the room with you. In the games we will ask you to catch, bounce, or watch a moving object on the screen. You will also need to press a button or move your mouse/touchpad cursor to play the game."
+                    }],
                     "audio": ""
                 },
                 {
                     "imgSrc": "4.png",
                     "altText": "image",
-                    "textBlocks": [
-                        {
-                            "text": "Some of the games might be easy for you, and some might be hard. The most important thing is to try to do your best in all of the games."
-                        }
-                    ],
+                    "textBlocks": [{
+                        "text": "Some of the games might be easy for you, and some might be hard. The most important thing is to try to do your best in all of the games."
+                    }],
                     "audio": ""
                 },
                 {
                     "imgSrc": "5.png",
                     "altText": "image",
-                    "textBlocks": [
-                        {
-                            "text": "During the games, you will be recorded from your computer's webcam and microphone. Video recordings are sent to the researchers. At the end of the games, you will be prompted to choose a privacy level for your video recordings. You will have the option to withdraw your video from the study at this time. No video clips will be published or shared unless you allow it after playing the games."
-                        }
-                    ],
+                    "textBlocks": [{
+                        "text": "During the games, you will be recorded from your computer's webcam and microphone. Video recordings are sent to the researchers. At the end of the games, you will be prompted to choose a privacy level for your video recordings. You will have the option to withdraw your video from the study at this time. No video clips will be published or shared unless you allow it after playing the games."
+                    }],
                     "audio": ""
                 },
                 {
                     "imgSrc": "6.png",
                     "altText": "image",
-                    "textBlocks": [
-                        {
-                            "text": "After you are done, you will earn a gift certificate to thank you for being in the study."
-                        }
-                    ],
+                    "textBlocks": [{
+                        "text": "After you are done, you will earn a gift certificate to thank you for being in the study."
+                    }],
                     "audio": ""
                 },
                 {
                     "imgSrc": "7.png",
                     "altText": "image",
-                    "textBlocks": [
-                        {
-                            "text": "You can talk to your parent/caregiver before you decide if you want to do the study. We will also ask your parents/caregivers if it is okay for you to do this study. But even if your parents/caregivers say “yes” you can still decide not to do it."
-                        }
-                    ],
+                    "textBlocks": [{
+                        "text": "You can talk to your parent/caregiver before you decide if you want to do the study. We will also ask your parents/caregivers if it is okay for you to do this study. But even if your parents/caregivers say “yes” you can still decide not to do it."
+                    }],
                     "audio": ""
                 },
                 {
                     "imgSrc": "8.png",
                     "altText": "image",
-                    "textBlocks": [
-                        {
-                            "text": "If you don’t want to be in this study, you don’t have to participate. Remember, being in this study is your choice and no one will be upset if you don’t want to, even if you change your mind later and want to stop."
-                        }
-                    ],
+                    "textBlocks": [{
+                        "text": "If you don’t want to be in this study, you don’t have to participate. Remember, being in this study is your choice and no one will be upset if you don’t want to, even if you change your mind later and want to stop."
+                    }],
                     "audio": ""
                 },
                 {
                     "imgSrc": "9.png",
                     "altText": "image",
-                    "textBlocks": [
-                        {
-                            "text": "You can ask your parent/caregiver any questions that you have about the study now. If you have a question later that you didn’t think of now, you can e-mail our Study Coordinator at pairs@mit.edu. You can also call the Chairman of the Committee on the Use of Humans as Experimental Subjects at M.I.T. at 1 - 617 - 253 6787 if you feel you have been treated unfairly."
-                        }
-                    ],
+                    "textBlocks": [{
+                        "text": "You can ask your parent/caregiver any questions that you have about the study now. If you have a question later that you didn’t think of now, you can e-mail our Study Coordinator at pairs@mit.edu. You can also call the Chairman of the Committee on the Use of Humans as Experimental Subjects at M.I.T. at 1 - 617 - 253 6787 if you feel you have been treated unfairly."
+                    }],
                     "audio": ""
                 }
             ],
@@ -781,32 +758,27 @@
         },
         "audio-check": {
             "kind": "exp-lookit-instructions",
-            "blocks": [
-                {
-                    "text": "Please press the play button to test the audio. Adjust your computer’s volume setting to a comfortable level.<br>You won’t be able to adjust your volume settings afterwards. ",
-                    "title": "Audio settings",
-                    "mediaBlock": {
-                        "text": "You should hear rattle sound",
-                        "isVideo": false,
-                        "sources": [
-                            {
-                                "src": "https://npiproject.s3.us-east-2.amazonaws.com/Resources/sounds/rattling_sound.mp3",
-                                "type": "audio/mp3"
-                            }
-                        ],
-                        "mustPlay": true,
-                        "warningText": "Please try playing the sample audio."
-                    }
+            "blocks": [{
+                "text": "Please press the play button to test the audio. Adjust your computer’s volume setting to a comfortable level.<br>You won’t be able to adjust your volume settings afterwards. ",
+                "title": "Audio settings",
+                "mediaBlock": {
+                    "text": "You should hear rattle sound",
+                    "isVideo": false,
+                    "sources": [{
+                        "src": "https://npiproject.s3.us-east-2.amazonaws.com/Resources/sounds/rattling_sound.mp3",
+                        "type": "audio/mp3"
+                    }],
+                    "mustPlay": true,
+                    "warningText": "Please try playing the sample audio."
                 }
-            ],
+            }],
             "showNextButton": true,
             "showPreviousButton": false,
             "nextButtonText": "Next"
         },
         "desktop-settings": {
             "kind": "exp-frame-select",
-            "frameOptions": [
-                {
+            "frameOptions": [{
                     "kind": "exp-video-config",
                     "troubleshootingIntro": "",
                     "showNextButton": true,
@@ -819,8 +791,7 @@
                     "introText": "Position your camera so that it shows your entire face if possible. If you do not see your own video, your computer’s camera access could be disabled. Please ensure that your settings allow access to the camera.",
                     "requireItemConfirmation": true,
                     "completedItemText": "Did it!",
-                    "instructionBlocks": [
-                        {
+                    "instructionBlocks": [{
                             "text": "<strong>Make sure the webcam you're using is roughly centered</strong> relative to this monitor. This makes it much easier for us to tell whether your child is looking to the left or right!",
                             "image": {
                                 "src": "https://s3.amazonaws.com/lookitcontents/website/centering.png",
@@ -860,8 +831,7 @@
         },
         "intro-games-group": {
             "kind": "group",
-            "frameList": [
-                {
+            "frameList": [{
                     "id": "intro",
                     "source": "/Resources/images/intro.png",
                     "mediaSource": {
@@ -939,8 +909,7 @@
         },
         "game1-group": {
             "kind": "group",
-            "frameList": [
-                {
+            "frameList": [{
                     "id": "map",
                     "instructions": "Click on the START button to play the first game.",
                     "mediaSource": {
@@ -1097,8 +1066,7 @@
         },
         "game2-group": {
             "kind": "group",
-            "frameList": [
-                {
+            "frameList": [{
                     "id": "map",
                     "instructions": "Click on the START button to play the second game.",
                     "mediaSource": {
@@ -1240,8 +1208,7 @@
         },
         "game5-group": {
             "kind": "group",
-            "frameList": [
-                {
+            "frameList": [{
                     "id": "map",
                     "instructions": "Click on the START button to play the third game.",
                     "mediaSource": {
@@ -1375,8 +1342,7 @@
         },
         "game3-group": {
             "kind": "group",
-            "frameList": [
-                {
+            "frameList": [{
                     "id": "map",
                     "instructions": "Click on the START button to play the fourth game.",
                     "mediaSource": {
@@ -1540,8 +1506,7 @@
         },
         "game4-group": {
             "kind": "group",
-            "frameList": [
-                {
+            "frameList": [{
                     "id": "map",
                     "instructions": "Click on the START button to play the last game.",
                     "mediaSource": {
@@ -1689,18 +1654,16 @@
         },
         "map-exit": {
             "kind": "group",
-            "frameList": [
-                {
-                    "id": "map",
-                    "source": "/Resources/images/instructions/map_exit.png",
-                    "mediaSource": {
-                        "src": "/Resources/sounds/instructions_mp3/64_You_made_it.mp3",
-                        "type": "audio/mp3"
-                    },
-                    "instructions": "Great! You made it out of the Arcade and finished our research study!\nPlease ask your parent or guardian to complete the next page in order to get your gift card.",
-                    "showInstructions": true
-                }
-            ],
+            "frameList": [{
+                "id": "map",
+                "source": "/Resources/images/instructions/map_exit.png",
+                "mediaSource": {
+                    "src": "/Resources/sounds/instructions_mp3/64_You_made_it.mp3",
+                    "type": "audio/mp3"
+                },
+                "instructions": "Great! You made it out of the Arcade and finished our research study!\nPlease ask your parent or guardian to complete the next page in order to get your gift card.",
+                "showInstructions": true
+            }],
             "commonFrameProperties": {
                 "kind": "exp-lookit-games",
                 "baseDir": "https://npiproject.s3.us-east-2.amazonaws.com"
@@ -1708,8 +1671,7 @@
         },
         "handedness-block": {
             "kind": "exp-frame-select",
-            "frameOptions": [
-                {
+            "frameOptions": [{
                     "kind": "exp-lookit-survey",
                     "formSchema": {
                         "schema": {
@@ -1771,37 +1733,35 @@
         },
         "settings-block": {
             "kind": "exp-frame-select",
-            "frameOptions": [
-                {
-                    "kind": "exp-lookit-survey",
-                    "formSchema": {
-                        "schema": {
-                            "type": "object",
-                            "title": "<ul> <li>Please make sure your computer or laptop is on a flat surface. Clear the area for the mouse or trackpad so that no objects interfere with your movement. </li>  <li>Set the browser window to the maximum size possible. To do this, press the maximize button at the top of your browser window. </li> <li> Please, do not refresh the page anytime during the study. </li> <li> Are you using a mouse or trackpad? If you have both, please use the one you selected for the remainder of the study. </li></ul>",
-                            "properties": {
-                                "q1": {
-                                    "enum": [
-                                        "Mouse",
-                                        "Trackpad"
-                                    ],
-                                    "type": "string",
-                                    "required": true
-                                }
-                            }
-                        },
-                        "options": {
-                            "fields": {
-                                "q1": {
-                                    "type": "radio",
-                                    "message": "Please answer this question.",
-                                    "validator": "required-field"
-                                }
+            "frameOptions": [{
+                "kind": "exp-lookit-survey",
+                "formSchema": {
+                    "schema": {
+                        "type": "object",
+                        "title": "<ul> <li>Please make sure your computer or laptop is on a flat surface. Clear the area for the mouse or trackpad so that no objects interfere with your movement. </li>  <li>Set the browser window to the maximum size possible. To do this, press the maximize button at the top of your browser window. </li> <li> Please, do not refresh the page anytime during the study. </li> <li> Are you using a mouse or trackpad? If you have both, please use the one you selected for the remainder of the study. </li></ul>",
+                        "properties": {
+                            "q1": {
+                                "enum": [
+                                    "Mouse",
+                                    "Trackpad"
+                                ],
+                                "type": "string",
+                                "required": true
                             }
                         }
                     },
-                    "showPreviousButton": false
-                }
-            ]
+                    "options": {
+                        "fields": {
+                            "q1": {
+                                "type": "radio",
+                                "message": "Please answer this question.",
+                                "validator": "required-field"
+                            }
+                        }
+                    }
+                },
+                "showPreviousButton": false
+            }]
         }
     },
     "sequence": [
