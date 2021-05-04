@@ -8,7 +8,7 @@
                     "formSchema": {
                         "schema": {
                             "type": "object",
-                            "title": "Did you hear about this study through <a href=\"https://sparkforautism.org/portal/page/about-spark/?utm_source=google&utm_medium=cpc&utm_term=spark%20for%20autism&utm_campaign=g-us-search-brand-trademark-exact&utm_content=338394345769&gclid=Cj0KCQiA_rfvBRCPARIsANlV66Oh0hh-ELXWFAzEKYT3ti0613GEEeayc9culAYwe8XAbRJ9TzkgrA0aAt_BEALw_wcB\" target=\"_blank\">SPARK</a> (a research registry for people with autism and their families)?",
+                            "title": "Now we have some questions to determine whether you are eligible to participate in this study. Participants from SPARK have already completed these screening questions via e-mail and will be directed to the setup instructions and games immediately after this page.<br><br>Did you hear about this study through <a href=\"https://sparkforautism.org/portal/page/about-spark/?utm_source=google&utm_medium=cpc&utm_term=spark%20for%20autism&utm_campaign=g-us-search-brand-trademark-exact&utm_content=338394345769&gclid=Cj0KCQiA_rfvBRCPARIsANlV66Oh0hh-ELXWFAzEKYT3ti0613GEEeayc9culAYwe8XAbRJ9TzkgrA0aAt_BEALw_wcB\" target=\"_blank\">SPARK</a> (a research registry for people with autism and their families)?",
                             "properties": {
                                 "spark": {
                                     "enum": [
@@ -593,7 +593,7 @@
                 }
             ],
             "commonFrameProperties": {
-                "selectNextFrame": "function(frames, frameIndex, frameData, expData, sequence, child, pastSessions) { var gotosparkPageIndex = frames.length-2; var goodByePageIndex = frames.length-1;var wantToPlayPageIndex = frames.indexOf(frames.filter((it)=> it.id == '3-question-block' )[0]) +  (frames.filter((it)=> it.id == '3-question-block' )[0].frameOptions.length) ; var childAssentPageIndex = frames.indexOf(frames.filter((it)=> it.id == '4-children-assent' )[0]);var gameIntroPageIndex = frames.indexOf(frames.filter((it)=> it.id == '7-intro-games-group' )[0]);  var data = frameData.formData;  if (typeof(data) !== 'undefined' && typeof(data.q1) !== 'undefined' && data.q1 == 'Yes') {  return  wantToPlayPageIndex; }else if(typeof(data.readingAbilities)!== undefined && data.readingAbilities == 'No'){return wantToPlayPageIndex;} else if(typeof(data.lastNTq) !== 'undefined' &&  data.lastNTq == 'No'){ return childAssentPageIndex; } else if(typeof(data.want_to_play) !== 'undefined' &&  data.want_to_play == 'Yes'){ return gameIntroPageIndex; }else if(typeof(data.diagnosis) !== 'undefined' &&  data.diagnosis == 'Yes'){ return goodByePageIndex; } else if(typeof(data.want_to_play) !== 'undefined' &&  data.want_to_play == 'No'){ return goodByePageIndex; } else if(typeof(data.spark) !== 'undefined' &&  data.spark === 'Yes, I was notified about this study because I am a participant in SPARK.'){return  childAssentPageIndex;} else {return  frameIndex+1;}}"
+                "selectNextFrame": "function(frames, frameIndex, frameData, expData, sequence, child, pastSessions) { var gotosparkPageIndex = frames.length-2; var goodByePageIndex = frames.length-1;var wantToPlayPageIndex = frames.indexOf(frames.filter((it)=> it.id == '3-question-block' )[0]) +  (frames.filter((it)=> it.id == '3-question-block' )[0].frameOptions.length) ; var childAssentPageIndex = frames.indexOf(frames.filter((it)=> it.id == '4-elegibility' )[0]);var gameIntroPageIndex = frames.indexOf(frames.filter((it)=> it.id == '11-transition-to-games' )[0]);  var data = frameData.formData;  if (typeof(data) !== 'undefined' && typeof(data.q1) !== 'undefined' && data.q1 == 'Yes') {  return  wantToPlayPageIndex; }else if(typeof(data.readingAbilities)!== undefined && data.readingAbilities == 'No'){return wantToPlayPageIndex;} else if(typeof(data.lastNTq) !== 'undefined' &&  data.lastNTq == 'No'){ return childAssentPageIndex; } else if(typeof(data.want_to_play) !== 'undefined' &&  data.want_to_play == 'Yes'){ return gameIntroPageIndex; }else if(typeof(data.diagnosis) !== 'undefined' &&  data.diagnosis == 'Yes'){ return goodByePageIndex; } else if(typeof(data.want_to_play) !== 'undefined' &&  data.want_to_play == 'No'){ return goodByePageIndex; } else if(typeof(data.spark) !== 'undefined' &&  data.spark === 'Yes, I was notified about this study because I am a participant in SPARK.'){return  childAssentPageIndex;} else {return  frameIndex+1;}}"
             }
         },
         "intro-study": {
@@ -638,11 +638,11 @@
         "thank-you": {
             "kind": "exp-lookit-exit-survey",
             "debriefing": {
-                "text": "Thank you for participating in PAIRS!<br /><br />  We hope you enjoyed the games. You will receive a message on the Lookit Platform within two weeks with your $10 Amazon gift card code. If you have any concerns, you may e-mail the study team at <a href=\"mailto:pairs@mit.edu\"> pairs@mit.edu </a> <br /><br /> Your child completed five games to measure how they predict a moving object. The objects in our games varied in their spatial and timing characteristics from trial to trial. The games were designed to be challenging enough so that even most adults can’t succeed on every try. There are many different ways a child might perform these tasks, and we are interested in studying this variation. If your child found the games too easy or too challenging, please know that is ok, and that their responses help us study a range of prediction abilities, and how these abilities change with age. <br /><br /> If you would like to learn more about prediction and development, you can read more at <a href=\"https://www.spectrumnews.org/features/deep-dive/autism-may-stem-problems-prediction/#no-back-button\" target=\"_blank\" >this article</a>. <br /><br /> One of the most challenging parts of neuroscience research is finding participants. If you enjoyed this study and want to further help the research team, please consider sharing our <a href=\"https://www.facebook.com/Pairs-Prediction-and-Interception-Research-Study-113340604190687\" target=\"_blank\">Facebook page</a> or by sending the <a href=\"http://pairs.mit.edu\" target=\"_blank\">PAIRS website</a> to other families with children ages 12-17 years.",
+                "text": "Thank you for participating in PAIRS!<br /><br />  We hope you enjoyed the study. You (the caregiver) will receive a message on the Lookit Platform within two weeks with your $10 Amazon gift card code. If you have any concerns, you may e-mail the study team at <a href=\"mailto:pairs@mit.edu\"> pairs@mit.edu </a> <br /><br /> Your teen completed five games to measure how they predict a moving object. The objects in our games varied in their spatial and timing characteristics from trial to trial. The games were designed to be challenging enough so that even most adults can’t succeed on every try. There are many different ways a child might perform these tasks, and we are interested in studying this variation. If your child found the games too easy or too challenging, please know that is okay. Their responses will help us study prediction abilities across age groups and compare these abilities in typically developing teens and teens with a diagnosis of autism.<br /><br /> If you would like to learn more about prediction and development, you can read more at <a href=\"https://www.spectrumnews.org/features/deep-dive/autism-may-stem-problems-prediction/#no-back-button\" target=\"_blank\" >this article</a>. <br /><br /> One of the most challenging parts of neuroscience research is finding participants. If you enjoyed this study and want to further help the research team, please consider sharing our <a href=\"https://www.facebook.com/Pairs-Prediction-and-Interception-Research-Study-113340604190687\" target=\"_blank\">Facebook page</a> or by sending the <a href=\"http://pairs.mit.edu\" target=\"_blank\">PAIRS website</a> to other families with children ages 12-17 years.",
                 "title": "Thank you!"
             },
             "showShareButton": false,
-            "generateProperties": "function(expData, sequence, child, pastSessions) {var diagnosis_frame = expData['3-question-block-1'];var want_to_play_frame = expData['3-question-block-18']; if(typeof(diagnosis_frame) !== 'undefined' && typeof(diagnosis_frame.formData.diagnosis) !== 'undefined' && diagnosis_frame.formData.diagnosis == 'Yes') { return {'debriefing': {'text': 'At this time, we are not able to enroll individuals with autism spectrum disorder who are not yet registered in <a href=\"https://sparkforautism.org/registration/account_information/#no-back-button\" target=\"_blank\">SPARK</a>, a national database of children and adults with a diagnosis of autism. If you would like to participate in future autism research studies, you are invited to visit the SPARK website to learn more about signing up. Thank you for your understanding.', 'title':  'Thank you for completing these questions.'} }; } else if(typeof(want_to_play_frame) !== 'undefined' && typeof(want_to_play_frame.formData.want_to_play) !== 'undefined' && want_to_play_frame.formData.want_to_play == 'No') {return {'debriefing': {'text': 'Thank you for your interest in our research. You may close your browser window to exit or go to the <a href=\"https://lookit.mit.edu\" target=\"_blank\">Lookit website</a> to see if there are other studies that might be a fit for your teen.', 'title':  'Goodbye!'}};} else {return {'debriefing': {'text': 'Thank you for participating in PAIRS! <br /><br /> We hope you enjoyed the games. You will receive a message on the Lookit Platform within two weeks with your $10 Amazon gift card code. If you have any concerns, you may e-mail the study team at <a href=\"mailto:pairs@mit.edu\"> pairs@mit.edu </a> <br /><br /> Your child completed five games to measure how they predict a moving object. The objects in our games varied in their spatial and timing characteristics from trial to trial. The games were designed to be challenging enough so that even most adults can’t succeed on every try. There are many different ways a child might perform these tasks, and we are interested in studying this variation. If your child found the games too easy or too challenging, please know that is ok, and that their responses help us study a range of prediction abilities, and how these abilities change with age. <br /><br /> If you would like to learn more about prediction and development, you can read more at <a href=\"https://www.spectrumnews.org/features/deep-dive/autism-may-stem-problems-prediction/#no-back-button\" target=\"_blank\" >this article</a>. <br /><br /> One of the most challenging parts of neuroscience research is finding participants. If you enjoyed this study and want to further help the research team, please consider sharing our <a href=\"https://www.facebook.com/Pairs-Prediction-and-Interception-Research-Study-113340604190687\" target=\"_blank\">Facebook page</a> or by sending the <a href=\"http://pairs.mit.edu\" target=\"_blank\">PAIRS website</a> to other families with children ages 12-17 years.', 'title': 'Thank you!'}}; }}"
+            "generateProperties": "function(expData, sequence, child, pastSessions) {var diagnosis_frame = expData['3-question-block-1'];var want_to_play_frame = expData['3-question-block-18']; if(typeof(diagnosis_frame) !== 'undefined' && typeof(diagnosis_frame.formData.diagnosis) !== 'undefined' && diagnosis_frame.formData.diagnosis == 'Yes') { return {'debriefing': {'text': 'At this time, we are not able to enroll individuals with autism spectrum disorder who are not yet registered in <a href=\"https://sparkforautism.org/registration/account_information/#no-back-button\" target=\"_blank\">SPARK</a>, a national database of children and adults with a diagnosis of autism. If you would like to participate in future autism research studies, you are invited to visit the SPARK website to learn more about signing up. Thank you for your understanding.', 'title':  'Thank you for completing these questions.'} }; } else if(typeof(want_to_play_frame) !== 'undefined' && typeof(want_to_play_frame.formData.want_to_play) !== 'undefined' && want_to_play_frame.formData.want_to_play == 'No') {return {'debriefing': {'text': 'Thank you for your interest in our research. You may close your browser window to exit or go to the <a href=\"https://lookit.mit.edu\" target=\"_blank\">Lookit website</a> to see if there are other studies that might be a fit for your teen.', 'title':  'Goodbye!'}};} else {return {'debriefing': {'text': 'Thank you for participating in PAIRS!<br /><br />  We hope you enjoyed the study. You (the caregiver) will receive a message on the Lookit Platform within two weeks with your $10 Amazon gift card code. If you have any concerns, you may e-mail the study team at <a href=\"mailto:pairs@mit.edu\"> pairs@mit.edu </a> <br /><br /> Your teen completed five games to measure how they predict a moving object. The objects in our games varied in their spatial and timing characteristics from trial to trial. The games were designed to be challenging enough so that even most adults can’t succeed on every try. There are many different ways a child might perform these tasks, and we are interested in studying this variation. If your child found the games too easy or too challenging, please know that is okay. Their responses will help us study prediction abilities across age groups and compare these abilities in typically developing teens and teens with a diagnosis of autism.<br /><br /> If you would like to learn more about prediction and development, you can read more at <a href=\"https://www.spectrumnews.org/features/deep-dive/autism-may-stem-problems-prediction/#no-back-button\" target=\"_blank\" >this article</a>. <br /><br /> One of the most challenging parts of neuroscience research is finding participants. If you enjoyed this study and want to further help the research team, please consider sharing our <a href=\"https://www.facebook.com/Pairs-Prediction-and-Interception-Research-Study-113340604190687\" target=\"_blank\">Facebook page</a> or by sending the <a href=\"http://pairs.mit.edu\" target=\"_blank\">PAIRS website</a> to other families with children ages 12-17 years.', 'title': 'Thank you!'}}; }}"
         },
         "start-recording-with-video": {
             "kind": "exp-lookit-start-recording",
@@ -654,12 +654,36 @@
             "video": "attentiongrabber",
             "displayFullscreen": true
         },
-        "transition": {
+        "elegibility": {
             "kind": "exp-lookit-instructions",
             "title": "",
             "blocks": [
                 {
-                    "text": "You’re about to begin the research study.  You will hear an introduction and then play 5 games. Once you start a game you cannot pause it. You will be able to take a break between games. Listen carefully to the instructions for each game."
+                    "text": "Based on your answers, your teen is eligible to participate! Next, we’ll explain the study to them and ask them if they want to participate. If they’re not already there with you, it’s time to call them over."
+                }
+            ],
+            "showNextButton": true,
+            "showPreviousButton": false,
+            "nextButtonText": "Next"
+        },
+        "transition-to-settings": {
+            "kind": "exp-lookit-instructions",
+            "title": "",
+            "blocks": [
+                {
+                    "text": "Next, we’ll guide you through setting up your computer for the games."
+                }
+            ],
+            "showNextButton": true,
+            "showPreviousButton": false,
+            "nextButtonText": "Next"
+        },
+        "transition-to-games": {
+            "kind": "exp-lookit-instructions",
+            "title": "",
+            "blocks": [
+                {
+                    "text": "Okay, you’re all set! It’s time to start the games! Remember, your parent/guardian should be in the room during the games, but should not help you play them.<br><br>First, you will hear an introduction and then play 5 games. Once you start a game you cannot pause it. You will be able to take a break between games. Listen carefully to the instructions for each game."
                 }
             ],
             "showNextButton": true,
@@ -803,16 +827,16 @@
             "showPreviousButton": false,
             "nextButtonText": "Next"
         },
-        "desktop-settings": {
+        "desktop-settings-1": {
+            "kind": "exp-video-config",
+            "troubleshootingIntro": "",
+            "showNextButton": true,
+            "showPreviousButton": false,
+            "nextButtonText": "Next"
+        },
+        "desktop-settings-2": {
             "kind": "exp-frame-select",
             "frameOptions": [
-                {
-                    "kind": "exp-video-config",
-                    "troubleshootingIntro": "",
-                    "showNextButton": true,
-                    "showPreviousButton": false,
-                    "nextButtonText": "Next"
-                },
                 {
                     "kind": "exp-video-config-quality",
                     "title": "Camera settings",
@@ -1806,14 +1830,17 @@
     },
     "sequence": [
         "intro-study",
-        "desktop-settings",
+        "desktop-settings-1",
         "parent-consent",
         "question-block",
+        "elegibility",
         "children-assent",
+        "transition-to-settings",
+        "desktop-settings-2",
         "settings-block",
         "audio-check",
         "handedness-block",
-        "transition",
+        "transition-to-games",
         "start-recording-with-video",
         "intro-games-group",
         "game1-group",
