@@ -155,7 +155,7 @@
 									"validator": "required-field"
 								},
 								"q2": {
-									"type": "radio"
+									"type": "checkbox"
 								}
 							}
 						}
@@ -342,7 +342,7 @@
 					"formSchema": {
 						"schema": {
 							"type": "object",
-							"title": "Are your child’s math or reading abilities currently more than one grade level behind OR has a professional (e.g. educator, psychologist, physician, etc.) identified your child as having a cognitive delay or intellectual disability?",
+							"title": "Does your child have any other learning or cognitive delays?",
 							"properties": {
 								"q1": {
 									"enum": [
@@ -351,6 +351,15 @@
 									],
 									"type": "string",
 									"required": true
+								},
+								"q2": {
+									"enum": [
+										"Your child's math or reading abilities are currently more than one grade level behind",
+										"A professional (e.g. educator, psychologist, physician, etc.) has identified your child as having a cognitive delay or intellectual disability"
+									],
+									"type": "string",
+									"title": "If so, please select all that apply. (If these options do not apply, please select 'No.')",
+									"required": false
 								}
 							}
 						},
@@ -360,6 +369,9 @@
 									"type": "radio",
 									"message": "Please answer this question.",
 									"validator": "required-field"
+								},
+								"q2": {
+									"type": "checkbox"
 								}
 							}
 						}
